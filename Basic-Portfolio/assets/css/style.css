@@ -50,7 +50,7 @@ p {
 	padding: 1em;
     width: 6em;
     margin-left: 5%;
-    margin-right: 32%;
+    margin-right: 420px;
 }
 
 h2, h3 {
@@ -148,6 +148,7 @@ aside h3 {
 
 .wrap {
 	min-height: 100vh;
+
 }
 
 .name, .main-nav, .main-nav li {
