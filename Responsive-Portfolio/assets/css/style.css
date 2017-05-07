@@ -14,7 +14,7 @@ body {
 
 .profile {
   float: left;
-  width: 200px;
+  width: 260px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -244,12 +244,9 @@ input[type=submit] {
 
 /* media queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
 
-  #main-container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  
 
   #main-header {
     position: static;
@@ -277,29 +274,57 @@ input[type=submit] {
   }
 
   
+  
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 641px) {
+
+  #main-container {
+    padding-top: 130px;
+    
+  }
 
   #main-header {
     position: fixed;
   }
 
-  #main-container {
-    padding-top: 130px;
-    margin:;
-}
-
   #logo {
     width: 250px;
     height: 90px;
-    margin-left: 10%;
+    margin-left: 15px;
+    
   }
 
   nav {
     width: auto;
-    margin-right: 10%;
+    margin-right: 15px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  
+  #main-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
+@media screen and (min-width: 801px) {
+
+  .profile {
+    width: 100%;
+  }
+
+  #logo {
+    margin-left: 5%;
+  }
+
+  nav {
+    margin-right: 5%;
   }
 
   .container {
@@ -311,7 +336,7 @@ input[type=submit] {
     width: 30%;
     max-width: 270px;
     min-width: 260px;
-    margin-right: 10%;
+    margin-right: 5%;
   }
 
   .work {
@@ -319,10 +344,10 @@ input[type=submit] {
   }
 
   .main-section {
-    width: 45%;
-    margin-left: 10%;
+    width: 55%;
+    margin-left: 5%;
   }
-
+}
 
 
 
@@ -365,6 +390,14 @@ input[type=submit] {
   
 nav {
   margin-right: 0;
+}
+
+.profile {
+  float: left;
+  width: 260px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
 }
