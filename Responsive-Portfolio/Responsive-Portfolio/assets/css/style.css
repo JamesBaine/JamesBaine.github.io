@@ -14,7 +14,7 @@ body {
 
 .profile {
   float: left;
-  width: 200px;
+  width: 260px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -303,7 +303,8 @@ input[type=submit] {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  
   #main-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -312,7 +313,11 @@ input[type=submit] {
 
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
+
+  .profile {
+    width: 100%;
+  }
 
   #logo {
     margin-left: 5%;
@@ -385,6 +390,14 @@ input[type=submit] {
   
 nav {
   margin-right: 0;
+}
+
+.profile {
+  float: left;
+  width: 260px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
 }
