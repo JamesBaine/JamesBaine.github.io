@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/arrow-logo.png">
+        
+        <title>James Baine</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link" onclick="hideNav()">About Me</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link" onclick="hideNav()">My Work</a></li>
+                    <li class="navigation__item"><a href="mailto:jamesmbaine@gmail.com" target="_top" class="navigation__link" onclick="hideNav()">Contact Me</a></li>
+                    <li class="navigation__item"><a href="#section-connect" class="navigation__link" onclick="hideNav()">Connect with me</a></li>
+                    </ul>
+            </nav>
+        </div>
+
+        <header id="section-header" class="header">
+            <div class="header__logo-box">
+                    
+                <svg class="header__logo" width="40" height="50">
+                    <polyline fill="none"  stroke-width="3"
+                        points=
+                            "8,4
+                            32,4
+                            24,12
+                            32,16
+                            20,36
+                            8,16
+                            16,12"
+                    />
+                </svg>
+                        
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">James Baine</span>
+                    <span class="heading-primary--sub">Web Developer</span>
+                </h1>
+
+                <a id="#contact" href="mailto:jamesmbaine@gmail.com" target="_top" class="btn btn--white btn--animated">Contact Me</a>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="section-about" id="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        I design and build websites and applications.
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">About Me</h3>
+                        <p class="paragraph">
+                            My name is James and I love building websites and web applications that combine fresh and clean aesthetics with fluid and intuitive user interfaces. I have multiple years of experience in coding with HTML, CSS and Javascript as well as more advanced frameworks including (but not limited to) Sass/SCSS, Node, Express and React. This experience include attending an intensive 6 month fullstack web development training program at UCLA extension and working as a web development intern at Wilshire Financial Network. I am also constantly trying to learn more and add to my skill set as a developer.
+
+                        </p>
+
+
+                        <a href="#section-features" class="btn-text">View my portfolio &darr;</a>
+
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+
+                            <img srcset="img/spirit-bus.png 300w, img/spirit-bus.png 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 1"
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/spirit-bus.png">
+
+                            <img srcset="img/wolf.png 300w, img/wolf.png 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 2"
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/wolf.png">
+
+                            <img srcset="img/trillo.png 300w, img/skrilla-screen.png 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 3"
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/skrilla-screen.png">
+
+                            <!--
+                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-features" id="section-features">
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="feature-head heading-secondary heading-secondary--white">
+                        My Projects
+                    </h2>
+                </div>
+                
+                <div class="row">
+
+                    <a class="col-1-of-4 feature-link" href="https://jamesbaine.github.io/fork-q/dist/index.html">
+                        <div class="feature-box">
+                            <img class="feature-box__img feature-box__img--fork-q" src="img/fork-q.png" alt="fork-Q" srcset="">
+                            <h3 class="heading-tertiary u-margin-bottom-small">fork-Q</h3>
+                                <p class="feature-box__text">
+                                ES6 application that fetches recipes from API and adjusts servings, adds to shopping list and saves favorites. Compiled / bundled with Babel and Webpack.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="col-1-of-4 feature-link" href="https://jamesbaine.github.io/skrilla/">
+                        <div class="feature-box">
+                                <img class="feature-box__img feature-box__img--skrilla" src="img/skrilla.png" alt="Skrilla" srcset="">
+                                <h3 class="heading-tertiary u-margin-bottom-small">$krilla</h3>
+                            <p class="feature-box__text">
+                                Finance application that adds the users income and expenses for a given month and calculates the remaining budget. Written entirely in vanilla Javascript.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="col-1-of-4 feature-link" href="https://github.com/jacobkato49/MPK-SpiritBus">
+                        <div class="feature-box">
+                                <img class="feature-box__img" src="img/spiritbus.svg" alt="Skrilla" srcset="">
+                                <h3 class="heading-tertiary u-margin-bottom-small">Spirit Bus</h3>
+                            <p class="feature-box__text">
+                                An app detailing the bus routes and stops in Monterey Park. Geolocation powered by GoogleMaps API and Leaflet.js.
+                            </p>
+                        </div>
+                    </a>
+                
+                    <a class="col-1-of-4 feature-link" href="https://github.com/JamesBaine/bamazon">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-todolist-pen"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Bamazon</h3>
+                            <p class="feature-box__text">
+                                Node.js based, simplified e-commerce platform that links to a mysql database to track products and inventory.
+                            </p>
+                        </div>
+                    </a>
+
+                    
+
+                    
+
+                    
+
+                </div>
+
+                <div class="feature-nav row">
+                    <a href="#section-connect" class="btn-text btn-text--grey">Get in touch &darr;</a>
+                    <a href="https://github.com/JamesBaine" class="btn-text btn-text--grey btn-text--grey--repo">Visit my GitHub &rarr;</a>
+                </div>
+                
+            </section>
+
+            <section class="section-tech">
+                <div class="u-center-text u-margin-bottom-big">
+                        <h2 class="heading-secondary">Technologies and tools I use</h2>
+                </div>
+                <div class="tech-icons u-center-text">
+                        <img class="tech-icon" src="img/icons/html5.svg" alt="HTML5" title="HTML5">
+                        <img class="tech-icon" src="img/icons/css3.svg" alt="CSS3" title="CSS3">
+                        <img class="tech-icon" src="img/icons/javascript.svg" alt="Javascript" title="Javascript">     <img class="tech-icon" src="img/icons/jquery.svg" alt="JQuery" title="JQuery">
+                        <img class="tech-icon" src="img/icons/sass.svg" alt="Sass" title="Sass">
+                        <img class="tech-icon" src="img/icons/nodejs.svg" alt="Node.js" title="Node.js">      
+                        <img class="tech-icon" src="img/icons/reactjs.svg" alt="React.js" title="React.js">
+                        <img class="tech-icon" src="img/icons/redux.svg" alt="Redux" title="Redux">
+                        <img class="tech-icon" src="img/icons/vscode.svg" alt="VSCode" title="VSCode">
+                        <img class="tech-icon" src="img/icons/github.svg" alt="Github" title="Github">
+                        <img class="tech-icon" src="img/icons/firebase.svg" alt="Firebase" title="Firebase">
+                        <img class="tech-icon" src="img/icons/git.svg" alt="Git" title="Git">
+                        <img class="tech-icon" src="img/icons/gulp.svg" alt="Gulp" title="Gulp">
+                        <img class="tech-icon" src="img/icons/yarn.svg" alt="Yarn" title="Yarn">
+                        <img class="tech-icon" src="img/icons/npm.svg" alt="NPM" title="Node Package Manager">
+                        <img class="tech-icon" src="img/icons/heroku.svg" alt="Heroku" title="Heroku">
+                        <img class="tech-icon" src="img/icons/babel.svg" alt="Babel" title="Babel">
+                        <img class="tech-icon" src="img/icons/webpack.svg" alt="Webpack" title="Webpack">
+                        <img class="tech-icon tech-icon--sm" src="img/icons/expressjs.svg" alt="Express.js" title="Express.js">
+                        <img class="tech-icon tech-icon--sm" src="img/icons/mysql.svg" alt="MySQL" title="MySQL">
+                        <img class="tech-icon tech-icon--sm" src="img/icons/mongodb.svg" alt="MongoDB" title="MongoDB">
+                        <img class="tech-icon" src="img/icons/bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+                        <img class="tech-icon" src="img/icons/sequelize.svg" alt="Sequelize" title="Sequelize">
+                        <img class="tech-icon tech-icon--sm" src="img/icons/handlebarsjs.svg" alt="Handlebars.js" title="Handlebars.js">
+                        <img class="tech-icon" src="img/icons/wordpress.svg" alt="WordPress" title="WordPress">
+                        <img class="tech-icon" src="img/icons/photoshop.svg" alt="Photoshop" title="Photoshop">
+                        <img class="tech-icon" src="img/icons/creative-suite.svg" alt="Adobe Creative Suite" title="Adobe Creative Suite">
+                </div>
+
+                <div class="u-center-text u-margin-top-medium">
+                    <a href="#section-header" class="btn-text">Back to top &uarr;</a>
+                </div>
+                
+            </section>
+
+
+        </main>
+
+        <footer class="footer" id="section-connect">
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="mailto:jamesmbaine@gmail.com" target="_top" class="footer__link">Email</a></li>
+                            <li class="footer__item"><a href="https://www.linkedin.com/in/james-baine" class="footer__link">LinkedIn</a></li>
+                            <li class="footer__item"><a href="https://github.com/JamesBaine" class="footer__link">GitHub</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <P class="footer__copyright">
+                        Built using components from <a href="#" class="footer__link">Jonas Schmedtmann's</a> online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+            </div>
+        </section>
+        -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
