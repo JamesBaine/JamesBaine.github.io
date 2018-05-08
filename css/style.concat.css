@@ -812,6 +812,12 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.github__head {
+  color: #f7f7f7; }
+
+.github__chart {
+  width: 100%; }
+
 .footer {
   position: relative;
   z-index: 11;
