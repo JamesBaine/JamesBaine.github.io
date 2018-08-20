@@ -1,59 +1,58 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Carrois Gothic', sans-serif;
     font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: $font-color;
 }
 
 .heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
+    color: $font-color;
 
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
     &--main {
         display: block;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
-    
+        letter-spacing: 1rem;
+
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
         
         @include respond(phone) {
             letter-spacing: 1rem;
-            font-family: 5rem;
+            font-size: 3.5rem;
+            margin-top: 10rem;
         }
         /*
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
     }
-    
+
     &--sub {
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
-        letter-spacing: 1.75rem;
+        letter-spacing: 1rem;
+        color: $color-secondary;
         animation: moveInRight 1s ease-out;
-
+        
         @include respond(phone) {
             letter-spacing: .5rem;
         }
     }
+    
 }
 
 .heading-secondary {
-    font-size: 2.5rem;
-    text-transform: uppercase;
+    font-size: 3rem;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $font-color;
     letter-spacing: .2rem;
     transition: all .2s;
 
@@ -66,21 +65,31 @@ body {
     }
 
     &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        transform: scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
        
-    &--white {
-        background-image: linear-gradient(to right, $color-grey-light-1, $color-grey-light-2);
-    }
+
 }
 
 
+.header__logo {
+    font-weight: bolder;
+    
+    &__name {
+        color: $font-color;
+        font-size: 2rem;       
+    }
+
+    &__title {
+        color: $color-secondary;
+        font-size: 1.25rem;
+    }
+}
 
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .paragraph {
@@ -89,8 +98,4 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
-}
-
-.footer__copyright {
-    font-size: 1rem;
 }

@@ -22,3 +22,15 @@ $(document).ready(function(){
 	});
 });
 
+// Highlightn nav links when scrolling the page
+
+$(document).ready(function(){
+
+	$("div").mouseenter(function(){
+		 var id = $(this).attr('id');
+		 $('.main-nav__link').removeClass('active');
+		 $("[href=#"+id+"]").addClass('active');
+	});
+ 
+ });
+

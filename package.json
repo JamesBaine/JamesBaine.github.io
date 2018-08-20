@@ -1,7 +1,7 @@
 {
-  "name": "jamesbaine.github.io",
+  "name": "portefeuille",
   "version": "1.0.0",
-  "description": "gh pages home page",
+  "description": "New portfolio site design",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesBaine/JamesBaine.github.io.git"
+    "url": "git+https://github.com/JamesBaine/portefeuille.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JamesBaine/JamesBaine.github.io/issues"
+    "url": "https://github.com/JamesBaine/portefeuille/issues"
   },
-  "homepage": "https://github.com/JamesBaine/JamesBaine.github.io#readme",
+  "homepage": "https://github.com/JamesBaine/portefeuille#readme",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
     "concat": "^1.0.3",

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
 
         <link rel="stylesheet" href="css/icon-font.css">
 
@@ -16,51 +16,89 @@
     </head>
 
     <body>
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
+        <div class="main-nav">
+            <nav class="main-nav__nav">
+                <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#section-header" class="main-nav__link" >home</a></li>
+                        <li class="main-nav__item"><a href="#section-about" class="main-nav__link" >about</a></li>
+                        <li class="main-nav__item"><a href="#section-features" class="main-nav__link" >work</a></li>
+                        <li class="main-nav__item"><a href="#section-connect" target="_top" class="main-nav__link" >contact</a></li>
+                        
+                </ul>
+            </nav>
+        </div>
+
+        <div class="navburger">
+            <input type="checkbox" class="navburger__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navburger__button">
+                <span class="navburger__icon">&nbsp;</span>
             </label>
 
-            <div class="navigation__background">&nbsp;</div>
+            <div class="navburger__background">&nbsp;</div>
 
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#section-about" class="navigation__link" onclick="hideNav()">About Me</a></li>
-                    <li class="navigation__item"><a href="#section-features" class="navigation__link" onclick="hideNav()">My Work</a></li>
-                    <li class="navigation__item"><a href="mailto:jamesmbaine@gmail.com" target="_top" class="navigation__link" onclick="hideNav()">Contact Me</a></li>
-                    <li class="navigation__item"><a href="#section-connect" class="navigation__link" onclick="hideNav()">Connect with me</a></li>
+            <nav class="navburger__nav">
+                <ul class="navburger__list">
+                    <li class="navburger__item"><a href="#section-about" class="navburger__link" onclick="hideNav()">About Me</a></li>
+                    <li class="navburger__item"><a href="#section-features" class="navburger__link" onclick="hideNav()">My Work</a></li>
+                    <li class="navburger__item"><a href="mailto:jamesmbaine@gmail.com" target="_top" class="navburger__link" onclick="hideNav()">Contact Me</a></li>
+                    <li class="navburger__item"><a href="#section-connect" class="navburger__link" onclick="hideNav()">Connect with me</a></li>
                     </ul>
             </nav>
         </div>
 
         <header id="section-header" class="header">
             <div class="header__logo-box">
+
+                    <svg class="header__logo" width="40" height="50">
+                            <polyline fill="none"  stroke-width="3"
+                                points=
+                                    "8,4
+                                    32,4
+                                    24,12
+                                    32,16
+                                    20,36
+                                    8,16
+                                    16,12"
+                            />
+                        </svg>
                     
-                <svg class="header__logo" width="40" height="50">
-                    <polyline fill="none"  stroke-width="3"
-                        points=
-                            "8,4
-                            32,4
-                            24,12
-                            32,16
-                            20,36
-                            8,16
-                            16,12"
-                    />
-                </svg>
+                <!-- <div class="header__logo">
+                    <div class="header__logo__name">
+                        <p class="header__logo__name__box header__logo__name__box-top">
+                            James
+                        </p>
+                        <p class="header__logo__name__box header__logo__name__box-bottom">
+                            Baine
+                        </p>
+                    </div>
+                    <div class="header__logo__title">
+                        <p>
+                            Web Developer
+                        </p>
+                        <p>
+                            +
+                        </p>
+                        <p>
+                            UX Designer
+                        </p>
+                    </div>
+                </div> -->
                         
             </div>
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">James Baine</span>
-                    <span class="heading-primary--sub">Web Developer</span>
+                    <span class="heading-primary--main">James Baine<span class="heading-primary--sub">Front End Web Development</span>
                 </h1>
-
-                <a id="#contact" href="mailto:jamesmbaine@gmail.com" target="_top" class="btn btn--white btn--animated">Contact Me</a>
+                <a class="scroll-btn scroll-btn--head" href="#section-about">
+                    <svg class="scroll-btn__icon">
+                        <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                    </svg>
+                </a>
             </div>
+            
         </header>
 
         <main>
@@ -68,13 +106,12 @@
             <section class="section-about" id="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        I design and build websites and applications.
+                        About Me
                     </h2>
                 </div>
 
                 <div class="row">
                     <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">About Me</h3>
                         <p class="paragraph">
                             My name is James and I love building websites and web applications that combine fresh and clean aesthetics with fluid and intuitive user interfaces. I have multiple years of experience in coding with HTML, CSS and Javascript as well as more advanced frameworks including (but not limited to) Sass/SCSS, Node, Express and React. This experience include attending an intensive 6 month fullstack web development training program at UCLA extension and working as a web development intern at Wilshire Financial Network. I am also constantly trying to learn more and add to my skill set as a developer.
 
@@ -123,9 +160,9 @@
                     </h2>
                 </div>
                 
-                <div class="row">
+                <div class="features-container row">
 
-                    <a class="col-1-of-4 feature-link" href="https://jamesbaine.github.io/fork-q/dist/index.html">
+                    <a class="feature-link" href="https://jamesbaine.github.io/fork-q/dist/index.html">
                         <div class="feature-box">
                             <img class="feature-box__img feature-box__img--fork-q" src="img/fork-q.png" alt="fork-Q" srcset="">
                             <h3 class="heading-tertiary u-margin-bottom-small">fork-Q</h3>
@@ -135,7 +172,7 @@
                         </div>
                     </a>
 
-                    <a class="col-1-of-4 feature-link" href="https://jamesbaine.github.io/skrilla/">
+                    <a class=" feature-link" href="https://jamesbaine.github.io/skrilla/">
                         <div class="feature-box">
                                 <img class="feature-box__img feature-box__img--skrilla" src="img/skrilla.png" alt="Skrilla" srcset="">
                                 <h3 class="heading-tertiary u-margin-bottom-small">$krilla</h3>
@@ -145,7 +182,7 @@
                         </div>
                     </a>
 
-                    <a class="col-1-of-4 feature-link" href="https://github.com/jacobkato49/MPK-SpiritBus">
+                    <a class=" feature-link" href="https://github.com/jacobkato49/MPK-SpiritBus">
                         <div class="feature-box">
                                 <img class="feature-box__img" src="img/spiritbus.svg" alt="Skrilla" srcset="">
                                 <h3 class="heading-tertiary u-margin-bottom-small">Spirit Bus</h3>
@@ -155,7 +192,7 @@
                         </div>
                     </a>
                 
-                    <a class="col-1-of-4 feature-link" href="https://github.com/JamesBaine/bamazon">
+                    <a class=" feature-link" href="https://github.com/JamesBaine/bamazon">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-todolist-pen"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Bamazon</h3>
@@ -180,8 +217,8 @@
                 
 
                 <div class="feature-nav row">
-                    <a href="#section-connect" class="btn-text btn-text--grey">Get in touch &darr;</a>
-                    <a href="https://github.com/JamesBaine" class="btn-text btn-text--grey btn-text--grey--repo">Visit my GitHub &rarr;</a>
+                    <a href="#section-connect" class="btn-text">Get in touch &darr;</a>
+                    <a href="https://github.com/JamesBaine" class="btn-text btn-text--grey--repo">Visit my GitHub &rarr;</a>
                 </div>
 
                 
@@ -190,7 +227,7 @@
 
             <section class="section-tech">
                 <div class="u-center-text u-margin-bottom-big">
-                        <h2 class="heading-secondary">Technologies and tools I use</h2>
+                        <h2 class="heading-secondary">Technical Expertise</h2>
                 </div>
                 <div class="tech-icons u-center-text">
                         <img class="tech-icon" src="img/icons/html5.svg" alt="HTML5" title="HTML5">
@@ -234,20 +271,25 @@
         <footer class="footer" id="section-connect">
 
             <div class="row">
-                <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="mailto:jamesmbaine@gmail.com" target="_top" class="footer__link">Email</a></li>
-                            <li class="footer__item"><a href="https://www.linkedin.com/in/james-baine" class="footer__link">LinkedIn</a></li>
-                            <li class="footer__item"><a href="https://github.com/JamesBaine" class="footer__link">GitHub</a></li>                    
+                            <li class="footer__item"><a href="mailto:jamesmbaine@gmail.com" target="_top" class="footer__link">
+                                <svg class="footer__icon">
+                                    <use xlink:href="img/sprite.svg#icon-envelop"></use>
+                                </svg>
+                            </a></li>
+                            <li class="footer__item"><a href="https://www.linkedin.com/in/james-baine" class="footer__link">
+                                <svg class="footer__icon">
+                                    <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                                </svg>
+                            </a></li>
+                            <li class="footer__item"><a href="https://github.com/JamesBaine" class="footer__link">
+                                <svg class="footer__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a></li>                    
                         </ul>
                     </div>
-                </div>
-                <div class="col-1-of-2">
-                    <P class="footer__copyright">
-                        Design inspired by <a href="#" class="footer__link">Jonas Schmedtmann's</a> online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
-                    </p>
-                </div>
             </div>
         </footer>
 
