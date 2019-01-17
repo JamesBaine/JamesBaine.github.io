@@ -70,7 +70,7 @@ body {
       padding: 0; } }
 
 ::selection {
-  background-color: #43e6bd;
+  background-color: #5da1f4;
   color: #fff; }
 
 body {
@@ -106,7 +106,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1rem;
-    color: #8277FF;
+    color: #fff;
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
@@ -135,7 +135,7 @@ body {
     color: #555555;
     font-size: 2rem; }
   .header__logo__title {
-    color: #8277FF;
+    color: #fff;
     font-size: 1.25rem; }
 
 .heading-tertiary {
@@ -216,16 +216,16 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #8277FF;
+  background-color: #fff;
   color: #777; }
   .btn--white::after {
-    background-color: #8277FF; }
+    background-color: #fff; }
 
 .btn--green {
-  background-color: #43e6bd;
-  color: #8277FF; }
+  background-color: #5da1f4;
+  color: #fff; }
   .btn--green::after {
-    background-color: #43e6bd; }
+    background-color: #5da1f4; }
 
 .btn::after {
   content: "";
@@ -245,15 +245,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #8277FF;
+  color: #fff;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #8277FF;
+  border-bottom: 1px solid #fff;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #8277FF;
+  background-color: #fff;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -273,7 +273,7 @@ body {
 
 .btn-text--grey:hover {
   background-color: #f7f7f7;
-  color: #43e6bd;
+  color: #5da1f4;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -289,7 +289,7 @@ body {
   width: 3rem;
   transition: all .2s; }
   .scroll-btn .scroll-btn__icon:hover {
-    fill: #8277FF;
+    fill: #fff;
     transform: scale(1.3); }
 
 .composition {
@@ -368,7 +368,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #43e6bd, #43e6bd);
+    background-image: linear-gradient(to right, #5da1f4, #5da1f4);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -379,7 +379,7 @@ body {
     height: 6rem; }
   .feature-box__svg {
     width: 6rem;
-    fill: #8277FF; }
+    fill: #1766bb; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -433,7 +433,7 @@ body {
     fill: #f7f7f7;
     transition: all .2s; }
     .footer__icon:hover, .footer__icon:active {
-      fill: #43e6bd;
+      fill: #5da1f4;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
       transform: rotate(5deg) scale(1.3); }
 
@@ -479,7 +479,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(177, 250, 232, 0.7), rgba(67, 230, 189, 0.7)), url(../img/brandi-redd.jpg);
+  background-image: linear-gradient(to right bottom, rgba(141, 202, 249, 0.7), rgba(93, 161, 244, 0.7)), url(../img/brandi-redd.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -490,7 +490,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(177, 250, 232, 0.7), rgba(67, 230, 189, 0.7)), url(../img/brandi-redd.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(141, 202, 249, 0.7), rgba(93, 161, 244, 0.7)), url(../img/brandi-redd.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -502,7 +502,7 @@ body {
   .header__logo {
     height: 4rem; }
     .header__logo polyline {
-      stroke: #8277FF; }
+      stroke: #fff; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -533,7 +533,7 @@ body {
       margin-right: 1.5rem;
       display: inline-block; }
   .main-nav__link:hover, .main-nav__link:active {
-    color: #8277FF; }
+    color: #fff; }
   .main-nav__link .active {
     color: red; }
 
@@ -571,7 +571,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#43e6bd, #50af90);
+  background-image: radial-gradient(#5da1f4, #1766bb);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -622,7 +622,7 @@ body {
 
 .navburger__link:hover, .navburger__link:active {
   background-position: 100%;
-  color: #43e6bd;
+  color: #5da1f4;
   transform: translateX(1rem); }
 
 .navburger__checkbox:checked ~ .navburger__background {
@@ -678,7 +678,7 @@ body {
 .section-features {
   position: relative;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(177, 250, 232, 0.7), rgba(67, 230, 189, 0.7)), url(../img/brandi-redd.jpg);
+  background-image: linear-gradient(to right bottom, rgba(141, 202, 249, 0.7), rgba(93, 161, 244, 0.7)), url(../img/brandi-redd.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
